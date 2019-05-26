@@ -1,6 +1,6 @@
 # Marathon_assets
 
-## (Problems)
+## (Solved Problems)
 Has some resolutions I made to some problems.
 
 ## (Data_Structures & Algorithms)

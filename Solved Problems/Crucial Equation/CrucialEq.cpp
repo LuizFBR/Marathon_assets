@@ -3,36 +3,32 @@
 
 using namespace std;
 
-int gcd(int a, int b) // Euclid's Greatest Common Divisor
-{
-    // Everything divides 0
-    if (a == 0)
-       return b;
-    if (b == 0)
-       return a;
+int gcd(int m,int n){
 
-    // base case
-    if (a == b)
-        return a;
+ if(n==0)
 
-    // a is greater
-    if (a > b)
-        return gcd(a-b, b);
-    return gcd(a, b-a);
+  return m;
+
+ else
+
+  return gcd(n,m%n);
+
 }
 
 
 int main()
 {
+    int a,b,c,T,C = 1;
 
-    int a,b,c,T;
+    cin >> T;
 
     for ( int t = 0 ; t < T ; ++t ){
         cin >> a >> b >> c;
 
-        if ( c % gcd(a,b) == 0)cout << "YES" <<endl;
-        else cout << "NO" << endl;
-    }
+        int sol = gcd(a,b);
 
+        if ( c % sol == 0 ) cout << "Case: " << C++ << " YES" << endl;
+        else cout << "Case: " << C++ << " NO" << endl;
+    }
     return 0;
 }

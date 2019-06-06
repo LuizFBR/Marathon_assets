@@ -27,8 +27,8 @@ int main()
 
         int sol = gcd(a,b);
 
-        if ( c % sol == 0 ) cout << "Case: " << C++ << " YES" << endl;
-        else cout << "Case: " << C++ << " NO" << endl;
+        if ( c % sol == 0 ) cout << "Case " << C++ << ": Yes" << endl;
+        else cout << "Case " << C++ << ": No" << endl;
     }
     return 0;
 }

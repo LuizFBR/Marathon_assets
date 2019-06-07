@@ -16,7 +16,6 @@ mkdir "$DIR_NAME"
 touch "$DIR_NAME/$FILE_NAME.cpp"
 #writing the new .cpp marathon file:
 echo "\
-#include <iostream>
 #include <bits/stdc++.h>
 
 using namespace std;
